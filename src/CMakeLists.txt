@@ -7,4 +7,5 @@
 #
 #===============================================================================
 
+add_subdirectory(GroundTruth)
 add_subdirectory(Superimposition)

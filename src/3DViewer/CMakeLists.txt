@@ -7,6 +7,16 @@
 #
 #===============================================================================
 
-add_subdirectory(3DViewer)
-add_subdirectory(GroundTruth)
-add_subdirectory(Superimposition)
+set(EXE_TARGET_NAME icub-fwdkin-ins-viewer)
+
+find_package(RobotsViz REQUIRED)
+
+set(${EXE_TARGET_NAME}_HDR)
+
+set(${EXE_TARGET_NAME}_SRC src/3DViewer.cpp)
+
+add_executable(${EXE_TARGET_NAME} ${${EXE_TARGET_NAME}_HDR} ${${EXE_TARGET_NAME}_SRC})
+
+target_link_libraries(${EXE_TARGET_NAME} RobotsViz::RobotsViz)
+
+install(TARGETS ${EXE_TARGET_NAME} DESTINATION bin)

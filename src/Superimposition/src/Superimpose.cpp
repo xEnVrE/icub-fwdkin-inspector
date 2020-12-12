@@ -157,7 +157,7 @@ int main(int argc, char** argv)
 {
     if (argc != 8)
     {
-        std::cout << "Synopsis: robmo-icub-hand-si <robot_name> <hand_laterality> <use_analogs> <camera_laterality> <use_camera_pose> <meshes_path> <use_debug_cover>"  << std::endl;
+        std::cout << "Synopsis: icub-fwdkin-ins-si <robot_name> <hand_laterality> <use_analogs> <camera_laterality> <use_camera_pose> <meshes_path> <use_debug_cover>"  << std::endl;
 
         return EXIT_FAILURE;
     }
